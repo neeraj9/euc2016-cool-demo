@@ -75,9 +75,16 @@ Erlang microkernel.
 
     PATH=$(pwd)/build/rumprun/rumprun/bin:$PATH sh run-vm --virt=kvm --iso=crud-0.1.0.iso
 
+Start monitoring the VM console logs in another console as follows:
+
+    tail -f serial.log
+
+Open a browser to <http://10.0.120.101/api-docs> and look at the beautiful
+swagger API Docs.
+
 ## Thanks
 
-Hope you had run running the project.
+Hope you had fun run running the project.
 
 ## Authors
 
