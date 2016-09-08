@@ -45,14 +45,15 @@ Its time to create a new CRUD handler to go along with it.
 
     rebar3 new crud-handler my_resource
 
-This is a manual step, but now you'll have to add the new handler `my_resource`
+This is a manual step, but now you'll have to add the new handler
+`my_resource_handler`
 into the router (or src/router.erl which is generated while creating the CRUD
 project). So, the contents of src/router.erl will modify as follows:
 
 ```
     specs() ->
         [
-            my_resource
+            my_resource_handler
         ].
 ```
 
